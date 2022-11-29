@@ -1,0 +1,15 @@
+.animated-gradient {
+  animation: animateBg 14s linear alternate infinite;
+  background-image: linear-gradient(60deg, #246655, #66245c, #043f51, #6e0546);
+  background-size: 400% 100%;
+  z-index: 1;
+}
+
+@keyframes animateBg {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
