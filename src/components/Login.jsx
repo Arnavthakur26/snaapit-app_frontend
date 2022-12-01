@@ -23,11 +23,13 @@ const Login = () => {
       userName: name,
       image: picture,
     };
-    setProgress(70);
-    setProgress(100);
+    setProgress(99);
 
     client.createIfNotExists(doc).then(() => {
-      navigate("/", { replace: true });
+      setProgress(100);
+      setTimeout(() => {
+        navigate("/", { replace: true });
+      }, 100);
     });
   };
 

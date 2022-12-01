@@ -81,12 +81,12 @@ const UserProfile = () => {
           <div className="flex flex-col justify-center items-center ">
             <ReactImageAppear
               src="https://picsum.photos/1600/900"
-              className=" w-full h-370 2xl:h-510 shadow-lg object-cover rounded-t-3xl rounded-b-xl"
+              className=" w-full h-370 2xl:h-510 shadow-lg z-0 object-cover rounded-t-3xl rounded-b-xl"
               animation="blurInUp"
               alt="user-bg-pic"
             />
             <img
-              className="rounded-full w-20 h-20 -mt-10 shadow-xl object-cover"
+              className="rounded-full w-20 h-20 -mt-10 z-10 shadow-xl object-cover"
               src={user.image}
               alt="user-pic"
             />
