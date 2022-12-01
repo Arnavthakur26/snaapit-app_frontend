@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { AiOutlineLogout } from "react-icons/ai";
 import { useParams, useNavigate } from "react-router-dom";
 import { googleLogout } from "@react-oauth/google";
-// import ReactImageAppear from "react-image-appear";
+import ReactImageAppear from "react-image-appear";
 
 import {
   userCreatedPinsQuery,
@@ -79,10 +79,10 @@ const UserProfile = () => {
       <div className="flex flex-col pb-5">
         <div className="relative flex flex-col mb-7">
           <div className="flex flex-col justify-center items-center ">
-            <img
+            <ReactImageAppear
               src="https://picsum.photos/1600/900"
               className=" w-full h-370 2xl:h-510 shadow-lg object-cover rounded-t-3xl rounded-b-xl"
-              animation="blurIn"
+              animation="blurInUp"
               alt="user-bg-pic"
             />
             <img
